@@ -8,6 +8,15 @@ $(document).ready(function(){
 
 })
 
+$(function() {
+	$('.fade-in img:gt(0)').hide();
+	setInterval(function(){
+		$('.fade-in :first-child').fadeOut()
+		.next('img').fadeIn()
+		.end().appendTo('.fade-in');
+	}, 8000)
+})
+
 
 var scrollToSchedule = function(){
 	$('.schedule-link').on("click",function(){
@@ -47,7 +56,7 @@ var scrollToResults = function(){
 
 
 var scrollToLodging = function(){
-	$('.schedule-link').on("click",function(){
+	$('.lodging-link').on("click",function(){
 		$('html, body').animate({
 			scrollTop: $('.lodging').offset().top
 		}, 'slow')
@@ -57,7 +66,7 @@ var scrollToLodging = function(){
 
 
 var scrollToVendors = function(){
-	$('.vendors-link').on("click",function(event){
+	$('.vendors-link').on("click",function(){
 		$('html, body').animate({
 			scrollTop: $('.vendors').offset().top
 		}, 'slow')

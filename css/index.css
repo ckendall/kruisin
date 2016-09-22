@@ -18,25 +18,42 @@ footer {
 	height: 80px;
 }
 
-.images-cycle {
+.header-image {
 	padding: 0;
 	margin: 0;
 	width: 100%;
 	top: 0;
 	left: 0;
-	z-index: -1;
 }
 
-.images-cycle img {
+.header-image img {
 	left: 0;
 	top: 0;
 	width: 100%;
-	z-index: -1;
-
 }
 
-.images-cycle img.active {
-	z-index: -1;
+.pictures-and-info {
+	height: 300px;
+}
+
+.facebook {
+	height: 100%;
+	width: 35%;
+	float: right;
+}
+
+.fade-in {
+	position: relative;
+	width: 40%;
+	height: 220px;
+}
+
+.fade-in img {
+	position: absolute;
+	left: 15%;
+	top: 5%;
+	height: 100%;
+	width: auto;
 }
 
 .header-font{
@@ -90,13 +107,12 @@ footer {
 	margin-top: 3%;
 }
 
-.schedule {
+.first-border {
 	border-top: 1px solid #bbb;
 	width: 100%;
 }
 
-.schedule-header {
-	margin-top: 0;
+.title-header {
 	text-align: center;
 }
 
@@ -104,7 +120,7 @@ footer {
 	text-align: center;
 }
 
-.schedule-info {
+.info {
 	margin-left: 25%;
 	width: 50%;
 	text-align: center;
