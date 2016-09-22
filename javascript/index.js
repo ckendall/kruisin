@@ -5,6 +5,7 @@ $(document).ready(function(){
 	scrollToResults();
 	scrollToLodging();
 	scrollToVendors();
+	removeATagDefaults();
 
 })
 
@@ -17,8 +18,15 @@ $(function() {
 	}, 8000)
 })
 
+var removeATagDefaults = function() {
+	$('a').on('click', function(event){
+		event.preventDefault();
+	})
+}
+
 
 var scrollToSchedule = function(){
+
 	$('.schedule-link').on("click",function(){
 		$('html, body').animate({
 			scrollTop: $('.schedule').offset().top

@@ -34,17 +34,19 @@ footer {
 
 .pictures-and-info {
 	height: 300px;
+	width: 100%;
 }
 
 .facebook {
 	height: 100%;
 	width: 35%;
+	margin-left: 80%;
 	float: right;
 }
 
 .fade-in {
 	position: relative;
-	width: 40%;
+	width: 50%;
 	height: 220px;
 }
 
