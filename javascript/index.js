@@ -5,8 +5,6 @@ $(document).ready(function(){
 	scrollToResults();
 	scrollToLodging();
 	scrollToVendors();
-	removeATagDefaults();
-
 })
 
 $(function() {
@@ -17,13 +15,6 @@ $(function() {
 		.end().appendTo('.fade-in');
 	}, 8000)
 })
-
-var removeATagDefaults = function() {
-	$('a').on('click', function(event){
-		event.preventDefault();
-	})
-}
-
 
 var scrollToSchedule = function(){
 
