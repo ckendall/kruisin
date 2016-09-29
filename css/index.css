@@ -149,9 +149,30 @@ footer {
 	margin-bottom: 5px;
 }
 
-.sponsor-image {
+.sponsor-image, .hotel-image, .meeting-image {
 	height: 100px;
 	width: 200px;
+}
+
+.hotel {
+	width: 100%;
+}
+
+.hotel .hotel-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.meeting .meeting-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center
+}
+
+.link-container {
+	text-align: center;
 }
 
 .sponsor-image-gold {
