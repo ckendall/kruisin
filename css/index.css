@@ -1,7 +1,6 @@
 html, body {
 	margin: 0;
 	height: 100%;
-	width: 100%;
 }
 
 nav {
@@ -60,7 +59,7 @@ footer {
 
 .header-font{
 	position: absolute;
-	top: 20%;
+	top: 21%;
 	left: 5%;
 	width: 20%;
 	font-style: italic;
@@ -144,6 +143,10 @@ footer {
 .center {
 	text-align: center;
 	margin-bottom: 10px;
+}
+
+.bottom {
+	margin-bottom: 5px;
 }
 
 .sponsor-image {
